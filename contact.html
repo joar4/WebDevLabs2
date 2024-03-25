@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arnav Joshi">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Arnav Joshi professional website">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="../static/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Arnav Joshi</title>
+</head>
+<body onLoad="addYear()">
+    <header>
+        <h1 id="webname">Arnav Joshi</h1>
+        <nav  id="myTopnav" class="topnav">
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html" class="active">Contact me</a>
+            <a href="fun.html">For Fun</a>
+            <a href="javascript:void(0);" class="icon" >
+                <i class="fa fa-bars" onclick="activeNav()"></i>
+            </a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2>Contact Me</h2>        
+        <form action="">
+            <label for="name">Your Name (required):</label>
+            <input type="text" id="name" required/>
+            <label for="email">Your Email (required):</label>
+            <input type="email" id="email" required/>
+            <label for="comment">Your Comment or Question:</label>
+            <textarea id="comment" cols="30" rows="10" required></textarea>
+            <input type="submit" value="SEND" onclick="validate()"/>
+        </form>
+        <p id="ValidateMsg"></p>
+        <table>
+            <tr><th>Contact Method</th><th>Description</th></tr>
+            <tr><td>Email</td><td>arnavj2@andrew.cmu.edu</td></tr>
+            <tr><td>Phone</td><td>609-898-1234</td></tr>
+            <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/arnav-j-b335332b9" target="_blank">https://www.linkedin.com/in/arnav-j-b335332b9</a></td></tr>
+        </table>
+    </div>
+    <footer>
+        <p id="copyYear">Arnav Joshi &copy; </p>
+    </footer>
+</body>
+</html>
